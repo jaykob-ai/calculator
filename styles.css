@@ -14,12 +14,13 @@ body {
     min-height: 100vh;
 }
 div#rechner {
-    height: 420px;
+    height: 560px;
     width: 360px;
     background-color: grey;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     border-radius: 20px;
 }
 div#display {
@@ -36,7 +37,7 @@ div#display>p#content {
     font-size: var(--textSize);
 }
 div#buttons {
-    height: 280px;
+    height: 360px;
     width: 320px;
     margin: 20px;
     display: flex;
@@ -46,20 +47,22 @@ div#numbers {
     display: flex;
     flex-wrap: wrap;
     width: 80%;
-    border: 2px solid black;
 }
 div.number {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 33.33333%;
-    height: 33.33333%;
+    height: 25%;
 }
 div.number>button.numberBtn {
     border: 2px solid black;
     width: 100%;
     height: 100%;
     font-size: var(--textSize);
+}
+div.number#dot {
+    width: 66.6666%;
 }
 div#operators {
     display: flex;
@@ -77,4 +80,9 @@ div.operator>button {
     border: 2px solid black;
     background-color: coral;
     font-size: var(--textSize);
+}
+div#clear>button#clearBtn {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
 }
